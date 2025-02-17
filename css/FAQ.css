@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* 버튼들 */
+.lend-tabmenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.lend-tabmenu button {
+  width: 26rem;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  color: var(--Darck-60);
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  font-size: clamp(1.5rem, 1.0416vw, 2rem);
+}
+
+.lend-tabmenu button:hover {
+  transition: 0.1s;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.lend-tabmenu button.on {
+  transition: 0.4s;
+  color: var(--Darck-100);
+  border-bottom: 5px solid #000;
+  font-size: 2.5rem;
+  font-size: clamp(2rem, 1.302vw, 2.5rem);
+}
+/* 버튼들 */
