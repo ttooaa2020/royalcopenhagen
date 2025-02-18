@@ -2,27 +2,27 @@ $(function () {
   const duration = 300;
 
   // 모바일 더보기
-  const $btnMenu = $(".mobile-more-btn");
-  const $mobileMenu = $(".mobile-menu");
+  const $btnmenu = $(".mobile-more-btn");
+  const $mobilemenu = $(".mobile-menu");
   const $btnClose = $(".mobile-btn-close");
 
-  $btnMenu.on("click", () => {
-    $mobileMenu.addClass("active");
+  $btnmenu.on("click", () => {
+    $mobilemenu.addClass("active");
   });
 
   $btnClose.on("click", () => {
-    $mobileMenu.removeClass("active");
+    $mobilemenu.removeClass("active");
   });
   // 모바일 더보기 end
 
   // 탭 메뉴
-  const $tabMenu = $(".lend-tabmenu > button");
+  const $tabmenu = $(".lend-tabmenu > button");
   const $tabCon = $(".lend-tabcon-item");
 
   tabAction(0);
 
   // 탭메뉴를 클릭 했을때
-  $tabMenu.on("click", function (e) {
+  $tabmenu.on("click", function (e) {
     // a의 기본 동작막기
     e.preventDefault();
 
@@ -36,8 +36,8 @@ $(function () {
   // 공통의 동작을 함수로 정의
   function tabAction(index) {
     // 탭메뉴 활성화
-    $tabMenu.removeClass("on");
-    $tabMenu.eq(index).addClass("on");
+    $tabmenu.removeClass("on");
+    $tabmenu.eq(index).addClass("on");
 
     // 인덱스에 해당하는 $tabCon 보이기
     $tabCon.hide();
