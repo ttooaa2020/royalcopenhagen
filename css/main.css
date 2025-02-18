@@ -140,7 +140,8 @@
 .company-all {
   display: flex;
   flex-direction: column;
-  gap: 20rem;
+  gap: 10rem;
+  gap: 5.2083%;
 }
 
 .company .brand-story {
@@ -243,10 +244,6 @@
   position: relative;
 }
 
-.event-list li figure {
-  border: 0px;
-  border-radius: 0;
-}
 .event-con {
   position: absolute;
   width: 80%;
